@@ -1,12 +1,15 @@
-//
-//  main.swift
-//  swift exercise1
-//
-//  Created by s20181102932 on 2019/9/18.
-//  Copyright © 2019 wjx. All rights reserved.
-//
-
-import Foundation
-
-print("Hello, World!")
-
+var a = 0;
+var sum = 0;
+while a < 100
+{
+    a = a + 1
+    if a % 7 == 0
+    {
+       continue
+    }
+    else
+    {
+        sum = sum + a;
+    }
+}
+print(sum)
