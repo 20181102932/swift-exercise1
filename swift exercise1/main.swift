@@ -95,7 +95,7 @@ for item in ints
 {
     print(item)
 }
-*/
+
 var array:[Int] = [3,5,7,10,22,101]
 var first = array[0]
 for(index,_) in array.enumerated(){
@@ -107,3 +107,21 @@ array[array.count - 1] = first
 for item in array{
     print(item)
 }
+
+func sum(i1:Int , i2:Int) -> Int
+{
+    return i1+i2
+}
+print(sum(i1:100,i2:200))
+*/
+func sum(array:[String]) -> Int{
+    for(index,_) in array.enumerated()
+    {
+        var a:Int = 0
+        var b:Int = 0
+      //  b = Int(array(index))
+        a = a + b
+    }
+    return a
+}
+
