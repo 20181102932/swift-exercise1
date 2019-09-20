@@ -60,7 +60,7 @@ for item in strs{
 for item in strs{
     print(item)
 }
-*/
+
 var strs:[String] = ["3","a","8","haha","100","hello"]
 //算法
 for(index,_) in strs.enumerated(){
@@ -72,5 +72,38 @@ for(index,_) in strs.enumerated(){
     }
 }
 for item in strs{
+    print(item)
+}
+var ints = [3,5,8,7]
+for(index,_) in ints.enumerated(){
+    var temp = 0;
+    var temp1 = 0;
+    if index < ints.count
+    {
+        if(index == 0)
+        {
+            temp = ints[index + 1]//5
+            temp1 = ints[index + 2]//8
+            ints[ints.count-2] = ints[ints.count-1]
+            ints[ints.count-1] = ints[index]
+            ints[index] = temp
+            ints[index + 1] = temp1
+        }
+    }
+}
+for item in ints
+{
+    print(item)
+}
+*/
+var array:[Int] = [3,5,7,10,22,101]
+var first = array[0]
+for(index,_) in array.enumerated(){
+    if(index < array.count - 1){
+        array[index] = array[index + 1]
+    }
+}
+array[array.count - 1] = first
+for item in array{
     print(item)
 }
