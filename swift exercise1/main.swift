@@ -42,7 +42,7 @@ array += [204]
 for item in array{
     print(item)
 }
-*/
+
 var strs = ["3","a","8","haha","100","hello"]
 var string = "a"
 var count1 = strs.count - 1
@@ -55,6 +55,20 @@ for item in strs{
         strs[count1] = string
         count1 = count1 - 1
         count2 = count2 + 1
+    }
+}
+for item in strs{
+    print(item)
+}
+*/
+var strs:[String] = ["3","a","8","haha","100","hello"]
+//算法
+for(index,_) in strs.enumerated(){
+    if index < strs.count / 2{
+        var temp = ""
+        temp = strs[index]
+        strs[index] = strs[strs.count - index - 1]
+        strs[strs.count - index - 1] = temp
     }
 }
 for item in strs{
